@@ -37,6 +37,6 @@ steps:
     ConnectionType: 'AzureRM'
     azureSubscription: 'Visual Studio Enterprise Subscription(1)(d727d1a9-41f4-4b43-a486-6630f04038ff)'
     appType: 'webAppLinux'
-    WebAppName: 'sura-devops'
+    WebAppName: 'as-sura'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
     RuntimeStack: 'DOTNETCORE|3.1'

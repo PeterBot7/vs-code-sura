@@ -32,11 +32,11 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: AzureRmWebAppDeployment@4
+
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'arm-vscode'
     appType: 'webAppLinux'
-    WebAppName: 'AS-SVLinux-Dev'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    RuntimeStack: 'DOTNETCORE|3.1'
+    appName: 'AS-SVLinux-Dev'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'DOTNETCORE|3.1'

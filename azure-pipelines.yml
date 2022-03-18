@@ -35,7 +35,7 @@ steps:
 - task: AzureRmWebAppDeployment@4
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'WEBAPP'
+    azureSubscription: 'arm-vscode'
     appType: 'webAppLinux'
     WebAppName: 'ASP-SURA'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
